@@ -21,4 +21,13 @@ fn main() {
     let num_lines = temp_string.lines().count();
 
     println!("Lines: {:?}", num_lines);
+
+    let num_words = temp_string.split(|c| c == '\n' || c == ' ').count();
+
+    println!("Words: {:?}", num_words);
+
+    let num_chars = temp_string.chars().count();
+    println!("Chars: {:?}", num_words);
+
+    
 }
